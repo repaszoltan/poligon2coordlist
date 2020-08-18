@@ -7,6 +7,7 @@ import re
 koordList = [line.rstrip('\n') for line in open("poli.txt")]
 
 #simple replace
+koordList = [line.replace('  0.00', '') for line in koordList]
 koordList = [line.replace('  0', '') for line in koordList]
 koordList = [line.replace('  ', ' ') for line in koordList]
 #regex replace
